@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Update Profile{% endblock %}
+{% block content %}
+  <div class="container">
+    <h2>Update Your Profile</h2>
+    <form method="POST">
+      <div class="form-group">
+        <label for="full_name">User Name:</label>
+        <input type="text" class="form-control" id="full_name" name="full_name" value="{{ user.full_name }}">
+      </div>
+      <div class="form-group">
+        <label for="bio">Bio:</label>
+        <textarea class="form-control" id="bio" name="bio" rows="3">{{ user.bio }}</textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Profile Update Request</button>
+    </form>
+  </div>
+
+
+{% endblock %}

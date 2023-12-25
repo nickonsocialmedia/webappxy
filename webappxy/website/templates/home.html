@@ -1,0 +1,30 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
+%}
+<body>
+<div class="profile-div">
+  <div class="saved-notes">
+  <h1 class="profile-title">Notes</h1>
+    <ul class="list-group list-group-flush" id="notes">
+      {% for note in user.notes %}
+      <li class="list-group-item">
+        {{ note.data }}
+        <button type="button" class="close" onClick="deleteNote({{ note.id }})">
+          <span aria-hidden="true" class="x">&times;</span>
+        </button>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="text-area">
+    <form method="POST">
+      <textarea name="note" id="note" class="form-control"></textarea>
+      <br />
+      <div align="center">
+        <button type="submit" class="btn btn-primary">Add Note</button>
+      </div>
+    </form>
+  </div>
+</div>
+</body>
+
+{% endblock %}
