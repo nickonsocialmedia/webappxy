@@ -1,0 +1,5 @@
+# This might not be all of them.
+flask
+flask-sqlalchemy
+flask-login
+
