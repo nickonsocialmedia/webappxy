@@ -1,0 +1,118 @@
+/* Container */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+* {
+  color: grey;
+}
+
+/* Individual div styles */
+.m1,
+.m2,
+.m3,
+.m4,
+.m5,
+.m6,
+.m7,
+.m8,
+.m9,
+.m10,
+.m11 {
+  width: 50%; /* Two sections wide */
+  box-sizing: border-box;
+  padding: 10px; /* Adjust as needed */
+}
+
+/* Individual link styles */
+.m1 a,
+.m2 a,
+.m3 a,
+.m4 a,
+.m5 a,
+.m6 a,
+.m7 a,
+.m8 a,
+.m9 a,
+.m10 a,
+.m11 a {
+  display: block;
+  margin-bottom: 10px; /* margin */
+  width: calc(100% / 3); /* columns = 3*/
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #333; /* link color*/
+}
+
+/* static/css/styles.css */
+.center-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh; /* Optional: adjust as needed for full viewport height */
+}
+
+.landing_page_title {
+  width: 100%;
+  text-align: center;
+}
+
+.center-log-in-container {
+  position: absolute;
+}
+
+.error {
+  padding: 0;
+  margin: 0;
+}
+
+.profile-div {
+  position: absolute;
+  width: 100%;
+  display: block;
+  left: 5%;
+}
+
+.text-area {
+  text: black;
+  width: 90%;
+}
+
+.list-group-item {
+  width: 90%;
+}
+
+.button-forum {
+  position: fixed;
+  /* Your existing button styles */
+  margin: 3px;
+  bottom:8px;
+  right: 3%;
+  z-index: 4;
+}
+
+.page-container {
+  position: relative; /* Change to relative to allow positioning of children */
+  width: 90%;
+  margin-top: 15vh;
+}
+
+.forum-textarea {
+  position: fixed; /* Use fixed position for a stationary element */
+  bottom: 0;
+  left: 0;
+  padding: 1px;
+  width: 99%;
+  min-height: 20vh;
+  z-index: 3;
+}
+
+.chat-container {
+  position: relative;
+  left: 10%;
+  margin: 5px;
+  z-index: 1;
+  align-items: center;
+}
